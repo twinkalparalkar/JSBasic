@@ -28,3 +28,49 @@ function getDataTypeSize(dataType) {
             return -1; // Invalid data type
     }
 }
+/*
+Variable name is case sensitive
+space is not allowed
+only letter, digit, underscore(_),dollar($) are allowed
+first letter is not digit.It can be alphabets,_,$
+Reserved keyword are not allowed
+*/
+let brandName="Tata"//Use Camel case (first letter is small and second word's first letter is Capitalize )
+const totalPrice=500
+console.log(brandName,totalPrice)
+/*let const and var:-are keywords to declare
+1. Don't use "var" in ES6 because var can redeclare variable(var is global scope)
+var a=10;
+var a=15;
+
+below are invalid:
+let a=10;
+var a=10;
+or 
+const a=90;
+var a=0;
+or 
+
+let a=10
+const a=20;
+or 
+var a=10;
+let a=10;
+2.let and const are not redeclare the variable.(both are block scope)
+3.const always use with value.
+let a;//valid
+const a;//invalid
+const a=10;//valid
+*/
+
+const student={fullName:"rita",age:25}
+console.log(student["fullName"],student["age"],student.fullName,typeof student)
+student["fullName"]="raghav"
+console.log(student)
+/*
+Here we use const to declare and update object's key values.
+because if we want to change object then we need to change all key value pairs.
+
+*/
+
+
