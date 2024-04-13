@@ -219,7 +219,25 @@ PS C:\Users\dell\Desktop\React.js\JSBasic> git log --graph
 * commit 4fa47f586cb54a963177f0d1aed256db0c79232b (HEAD -> advanceJS, origin/advanceJS)
 | Author: twinkalp <twinkalparalkar2@gmail.com>
 | Date:   Sat Apr 13 22:35:35 2024 +0530
-|
+
+#########################################
+How to merge branch to main?
+first move to main Branch
+
+PS C:\Users\dell\Desktop\React.js\JSBasic> git switch main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\Users\dell\Desktop\React.js\JSBasic> git merge advanceJS
+Updating 3ddc38c..7ee5675
+Fast-forward
+ Gitguide.txt | 47 +++++++++++++++++++++++++++++++++++++++++++++++
+ advance.js   |  1 +
+ 2 files changed, 48 insertions(+)
+ create mode 100644 advance.js
+PS C:\Users\dell\Desktop\React.js\JSBasic> git push origin main
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:twinkalparalkar/JSBasic.git
+   3ddc38c..7ee5675  main -> main
 
 
 
