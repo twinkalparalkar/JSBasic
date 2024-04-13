@@ -50,4 +50,76 @@ Go to Github Settings:-SSH and GPG Keys:-
                     New SSH Key:-title,keytype:Authentication key,paste key
                     :-Add SSHKey button
 
+###################################################################
+How to push code first time?
+
+C:\Users\dell\Desktop\React.js>ssh -T git@github.com
+Hi twinkalparalkar! You've successfully authenticated, but GitHub does not provide shell access.
+
+C:\Users\dell\Desktop\React.js>git clone git@github.com:twinkalparalkar/JSBasic.git
+fatal: destination path 'JSBasic' already exists and is not an empty directory.
+
+C:\Users\dell\Desktop\React.js>git clone git@github.com:twinkalparalkar/JSBasic.git
+Cloning into 'JSBasic'...
+remote: Enumerating objects: 15, done.
+remote: Counting objects: 100% (15/15), done.
+remote: Compressing objects: 100% (13/13), done.
+remote: Total 15 (delta 3), reused 3 (delta 0), pack-reused 0
+Receiving objects: 100% (15/15), 4.86 KiB | 177.00 KiB/s, done.
+Resolving deltas: 100% (3/3), done.
+
+C:\Users\dell\Desktop\React.js>cd JSBasic
+
+C:\Users\dell\Desktop\React.js\JSBasic>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Gitguide.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\dell\Desktop\React.js\JSBasic>git add .
+
+C:\Users\dell\Desktop\React.js\JSBasic>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Gitguide.txt
+
+
+C:\Users\dell\Desktop\React.js\JSBasic>git commit -m "Guide to push code into Github"
+[main 628a04f] Guide to push code into Github
+ 1 file changed, 53 insertions(+)
+ create mode 100644 Gitguide.txt
+
+C:\Users\dell\Desktop\React.js\JSBasic>git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+C:\Users\dell\Desktop\React.js\JSBasic>git remote add origin git@github.com:twinkalparalkar/JSBasic.git
+error: remote origin already exists.
+
+C:\Users\dell\Desktop\React.js\JSBasic>git branch -M main
+
+C:\Users\dell\Desktop\React.js\JSBasic>git push origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.08 KiB | 73.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:twinkalparalkar/JSBasic.git
+   4a3fe5f..628a04f  main -> main
+
+###########################################
+How to push regularly updates? by VS code
+
+
 
