@@ -133,6 +133,19 @@ PS C:\Users\dell\Desktop\React.js\JSBasic> git add .
 PS C:\Users\dell\Desktop\React.js\JSBasic> git commit -m "Modified Gitguide file"
 [main adde69d] Modified Gitguide file
  1 file changed, 72 insertions(+)
+
+PS C:\Users\dell\Desktop\React.js\JSBasic> git pull origin main
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 982 bytes | 7.00 KiB/s, done.
+From github.com:twinkalparalkar/JSBasic
+ * branch            main       -> FETCH_HEAD
+   adde69d..8e5e415  main       -> origin/main
+Merge made by the 'ort' strategy.
+ README.md | 2 ++
+ 1 file changed, 2 insertions(+)
 PS C:\Users\dell\Desktop\React.js\JSBasic> git push origin main
 Enumerating objects: 5, done.
 Counting objects: 100% (5/5), done.
