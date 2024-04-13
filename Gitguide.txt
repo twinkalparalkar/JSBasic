@@ -1,0 +1,53 @@
+
+To Do SSH setup:
+
+C:\Users\dell\Desktop\React.js\JSBasic>ssh-keygen -o
+Generating public/private rsa key pair.
+Enter file in which to save the key (C:\Users\dell/.ssh/id_rsa):
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in C:\Users\dell/.ssh/id_rsa.
+Your public key has been saved in C:\Users\dell/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:GHju9zDa8u873y9wig7UeTNunfSEe5LBg2wt5iYO35U dell@DESKTOP-OFJ87KP
+The key's randomart image is:
++---[RSA 3072]----+
+|                 |
+|     .           |
+|    . o          |
+|     o o . o + . |
+|      o S o X B .|
+|     . .   *.*.X |
+|      . * ..=+E o|
+|      .+ Oo=.o.o |
+|      .oo+O+o .o.|
++----[SHA256]-----+
+
+To list all file
+C:\Users\dell\Desktop\React.js\JSBasic>dir
+ Volume in drive C has no label.
+ Volume Serial Number is A427-2870
+
+ Directory of C:\Users\dell\Desktop\React.js\JSBasic
+
+13-04-2024  12:15    <DIR>          .
+13-04-2024  12:15    <DIR>          ..
+07-04-2024  22:53               251 runJs.html
+11-04-2024  23:46             2,043 Welcome.js
+               2 File(s)          2,294 bytes
+               2 Dir(s)  150,721,609,728 bytes free
+
+C:\Users\dell\Desktop\React.js\JSBasic>type id_rsa.pub
+The system cannot find the file specified.
+
+C:\Users\dell\Desktop\React.js\JSBasic>cd  C:\Users\dell\.ssh
+
+C:\Users\dell\.ssh>type id_rsa.pub
+ssh-rsa .....87KP
+
+Copy This Key
+Go to Github Settings:-SSH and GPG Keys:-
+                    New SSH Key:-title,keytype:Authentication key,paste key
+                    :-Add SSHKey button
+
+
