@@ -121,5 +121,58 @@ To github.com:twinkalparalkar/JSBasic.git
 ###########################################
 How to push regularly updates? by VS code
 
+PS C:\Users\dell\Desktop\React.js> cd JSBasic
+PS C:\Users\dell\Desktop\React.js\JSBasic> git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+        modified:   Gitguide.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\dell\Desktop\React.js\JSBasic> git add .
+PS C:\Users\dell\Desktop\React.js\JSBasic> git commit -m "Modified Gitguide file"
+[main adde69d] Modified Gitguide file
+ 1 file changed, 72 insertions(+)
+PS C:\Users\dell\Desktop\React.js\JSBasic> git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.75 KiB | 447.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:twinkalparalkar/JSBasic.git
+   628a04f..adde69d  main -> main
+#####################################################################
+How to add Tag in Github by git?
+
+To list origin in remote repository
+PS C:\Users\dell\Desktop\React.js\JSBasic> git remote -v
+origin  git@github.com:twinkalparalkar/JSBasic.git (fetch)
+origin  git@github.com:twinkalparalkar/JSBasic.git (push) 
+
+  
+PS C:\Users\dell\Desktop\React.js\JSBasic> git tag -a Git-Github-guide -m "Annotated tag adding"          
+>>
+PS C:\Users\dell\Desktop\React.js\JSBasic> git tag
+Git-Github-guide
+PS C:\Users\dell\Desktop\React.js\JSBasic> git show Git-Github-guide
+tag Git-Github-guide
+Tagger: twinkalp <twinkalparalkar2@gmail.com>
+Date:   Sat Apr 13 14:00:08 2024 +0530
+
+Annotated tag adding
+
+PS C:\Users\dell\Desktop\React.js\JSBasic> git push origin Git-Github-guide
+Counting objects: 100% (22/22), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (17/17), done.
+Writing objects: 100% (22/22), 6.94 KiB | 263.00 KiB/s, done.
+Total 22 (delta 6), reused 14 (delta 3), pack-reused 0
+remote: Resolving deltas: 100% (6/6), done.
+To github.com:twinkalparalkar/JSBasic.git
+ * [new tag]         Git-Github-guide -> Git-Github-guide
+####################################################################
+
 
 
