@@ -187,5 +187,39 @@ To github.com:twinkalparalkar/JSBasic.git
  * [new tag]         Git-Github-guide -> Git-Github-guide
 ####################################################################
 
+Create branch
+
+PS C:\Users\dell\Desktop\React.js\JSBasic> git checkout -b advanceJS
+Switched to a new branch 'advanceJS'
+PS C:\Users\dell\Desktop\React.js\JSBasic> git branch
+* advanceJS
+  main
+Already on 'advanceJS'
+M       Gitguide.txt
+PS C:\Users\dell\Desktop\React.js\JSBasic> git branch --all      
+  main
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/main
+PS C:\Users\dell\Desktop\React.js\JSBasic> git add .
+PS C:\Users\dell\Desktop\React.js\JSBasic> git status
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   Gitguide.txt
+        new file:   advance.js
+PS C:\Users\dell\Desktop\React.js\JSBasic> git commit -m "Exploring advance concept of JS"
+ 2 files changed, 14 insertions(+)
+
+Delete Branch
+
+PS C:\Users\dell\Desktop\React.js\JSBasic> git branch -d advanceJS1  
+Deleted branch advanceJS1 (was 4fa47f5).
+
+To Graph of Commit history
+PS C:\Users\dell\Desktop\React.js\JSBasic> git log --graph
+* commit 4fa47f586cb54a963177f0d1aed256db0c79232b (HEAD -> advanceJS, origin/advanceJS)
+| Author: twinkalp <twinkalparalkar2@gmail.com>
+| Date:   Sat Apr 13 22:35:35 2024 +0530
+|
+
 
 
