@@ -73,4 +73,32 @@ because if we want to change object then we need to change all key value pairs.
 
 */
 
+console.log(123+123)
+console.log("123"+123)
+const profile={userName:"Shraddha",
+                follower:25,
+                following:4,
+                post:96,
+                detail:"ex-Microsoft",
+                isFollow:true};
+console.log(profile,typeof profile["userName"],profile.post)
+//Operator
+//Arithmatic Operator(+,-,*,/,%,**,++,--)
+let [a,b]=[2,4];//using destructuring assignment
+console.log(a+b,a-b,a*b,a/b,a%b,a**b)
+console.log("Use integer division :",Math.floor(25/2))
+console.log("preIncreament",++a)//first value will increase then print
+console.log("postIncreament",b++)//first value will print then change
+console.log(a--,--a)
+
+//Assignment Opeartor(=,+=,-=,*=,/=,%=,**=)
+console.log("a=a**3",a**=3)
+console.log("a=a+4",a+=4)
+
+//Comparson Operator(==,===,!=,!==,<,>,<=,>=)
+console.log("not and double equal to",a!==b,a!=b,a<b,"this will give boolean value results")
+
+//Logical Operator(&&,||,!)
+console.log(a==b && a!==b,!(a==b),"this will give boolean value results")
+
 
