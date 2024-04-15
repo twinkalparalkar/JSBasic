@@ -101,4 +101,38 @@ console.log("not and double equal to",a!==b,a!=b,a<b,"this will give boolean val
 //Logical Operator(&&,||,!)
 console.log(a==b && a!==b,!(a==b),"this will give boolean value results")
 
+//Conditional Statement
+
+let n=25;
+if(n % 2===0){
+    console.log("even number")
+}else if(n %2!==0){
+    console.log("odd number")
+}else{
+    console.log("String")
+}
+let age=20;
+if(age>18) console.log("Single line if statement,this is valid")
+
+//Ternary Operator a?b:c 3 operands
+age>18 ? console.log("adult"): console.log("not adult");
+
+//syntax ->Rules to code or any Language rules
+//MDN -> to read Documentation of JS
+//Switch Statement ->not used
+let fruit="Mangoes";
+switch(fruit){
+    case "Mangoes":
+        console.log("18")
+        break;
+    case "Papayas":
+        console.log("25")
+        break;
+    default:
+        console.log(`${fruit} is not fruit`)
+}
+
+
+
+
 
