@@ -101,7 +101,7 @@ console.log("not and double equal to",a!==b,a!=b,a<b,"this will give boolean val
 //Logical Operator(&&,||,!)
 console.log(a==b && a!==b,!(a==b),"this will give boolean value results")
 
-//Conditional Statement
+//Conditional Statement: if Statement,if-else statement, else-if statement
 
 let n=25;
 if(n % 2===0){
@@ -118,7 +118,7 @@ if(age>18) console.log("Single line if statement,this is valid")
 age>18 ? console.log("adult"): console.log("not adult");
 
 //syntax ->Rules to code or any Language rules
-//MDN -> to read Documentation of JS
+//MDN -> to read Documentation of JS:-https://developer.mozilla.org/en-US/
 //Switch Statement ->not used
 let fruit="Mangoes";
 switch(fruit){
@@ -131,6 +131,67 @@ switch(fruit){
     default:
         console.log(`${fruit} is not fruit`)
 }
+//Question
+let num=prompt("Enter a number:")//taking inpiut from user but In Pop-up
+if(num % 5===0){
+    console.log(num+" is multiple of 5")
+}else{
+    console.log(num+" is Not multiple of 5")
+}
+
+let score=90;
+
+if(score<=90 && score>=100){//Chceking range at same time
+    console.log("Grade A");
+}else if(score<=70 && score>=89){
+    console.log("Grade B");
+}else if(score<=60 && score>=69){
+    console.log("Grade C");
+}else if(score<=50 && score>=59){
+    console.log("Grade D");
+}else{
+    console.log("Grade F");
+}
+//Loop :-for loop, while loop, do-while loop, 
+//special:- for-of loop (String),for-in loop(Object)
+
+let sum=0;
+for(let i=1;i<6;i++){
+    sum+=i;
+    console.log("sum =",sum,"of",i)
+}
+
+// console.log(i)//i is not exit outside loop
+//Avoid Infinite Loop (Use valid stopping condition)
+
+let i=1;
+while(i<6){
+    console.log("while loop is same as for loop",i);
+    i++;//updation
+}
+
+i=0;
+do{
+    console.log("at least one time,Do-while loop run "+i)
+    i+=2;
+}while(i<5);
+
+/////////////////////////////////////////
+let custom="JavaScript Learning"
+
+for(let i of custom){
+    console.log("for-of loop is used for accessing each character of string",i);
+}
+
+let student1={name:"Rani",age:23,schoolName:"M.N.C School"};
+
+for(let key in student1){
+    console.log("(for-in loop is used for Object)",key,student1[key],"right way");
+    // console.log("error",student.key,"is undefined");
+}
+//////////////////////////////////////////////////
+
+
 
 
 
