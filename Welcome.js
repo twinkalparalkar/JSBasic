@@ -205,6 +205,15 @@ while(gameNum!=userNum){
 }
 console.log("Congratulations,You won")
 /////////////////////
+//String in JS
+let str="Twinkal Paralkar"
+let str1='Star'
+console.log("String built in property",str.length,str[0])
+console.log(`(String Interpolation)Template literal with backquote for using variable as single string\nname\tis\t${str}\t${2+3+4} embedded expression`)
+console.log("escape character\n for next line and \t for tab space ")
+let s="s\tB"//escape character is counted as single chracter (length =1 for \n)
+console.log(`${s} is length ${s.length}`)
+
 
 
 
