@@ -208,11 +208,40 @@ console.log("Congratulations,You won")
 //String in JS
 let str="Twinkal Paralkar"
 let str1='Star'
-console.log("String built in property",str.length,str[0])
-console.log(`(String Interpolation)Template literal with backquote for using variable as single string\nname\tis\t${str}\t${2+3+4} embedded expression`)
+console.log("String built-in property",str.length,str[0])
+console.log(`(String Interpolation)Template literal with backquote for using variable as single string
+\nname\tis\t${str}\t${2+3+4} embedded expression`)
 console.log("escape character\n for next line and \t for tab space ")
 let s="s\tB"//escape character is counted as single chracter (length =1 for \n)
 console.log(`${s} is length ${s.length}`)
+
+//String Methods(in-built functions)
+let string1="   Mumbai Metro"
+console.log(string1.toUpperCase(),string1)// Method will never change original string value.
+//it will always return new String.
+//Javascript String is immutable (not change).
+//Some method make some change in String but they actually create new string
+// string1=string1.toLowerCase()
+console.log("new string will update in old string",string1)
+console.log(string1.trim(),"remove space from starting and ending")
+console.log(string1.slice(3),string1.slice(1,4),"end is optional and not included\n(slice is used to  divide string)");
+console.log(string1.replace("mb","l"),"Replace method is case sensitive and \nit will only replace first matching element(not all)")
+console.log(`${string1} and ${string1.replaceAll("M","l")}`)
+
+let str2=" Indians "
+let str3="best city to grow"
+console.log(string1.concat(str2,str3),"to join multiple strings")
+console.log(string1+str2+str3,"to join multiple strings(similar way by operator)")
+
+console.log("Indices",string1[4],string1.charAt(3),typeof string1)
+console.log("not existing index will give 'undefined'",string1[100])
+string1[0]="S"//not Updating in JS(ignore by JS)no error
+console.log(string1)
+
+
+
+
+
 
 
 
