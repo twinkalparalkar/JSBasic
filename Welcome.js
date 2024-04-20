@@ -237,6 +237,12 @@ console.log("Indices",string1[4],string1.charAt(3),typeof string1)
 console.log("not existing index will give 'undefined'",string1[100])
 string1[0]="S"//not Updating in JS(ignore by JS)no error
 console.log(string1)
+////
+let company=["Bloomberry","Microsoft","Uber","Google","IBM","Netflix"]
+company.shift()
+console.log(company)
+company.splice(1,1,"Ola")
+company.push("Amazon")
 
 
 
