@@ -237,7 +237,37 @@ console.log("Indices",string1[4],string1.charAt(3),typeof string1)
 console.log("not existing index will give 'undefined'",string1[100])
 string1[0]="S"//not Updating in JS(ignore by JS)no error
 console.log(string1)
+let userName=prompt("Enter full name:")
+console.log(`@${userName.toLowerCase()}${userName.length}`)
+
 ////
+// Array in JS
+const marks=[23,56,89]
+marks[0]=10//we can update array by indices
+console.log(marks,typeof marks,marks.length,marks[2],marks[100])
+
+for(let i in marks){
+    console.log(marks[i])
+}
+let sum=0
+for(let mark of marks){
+    console.log(mark)
+    sum+=mark
+}console.log(`average is ${sum/marks.length}`)
+for(let i=0;i<marks.length;i++){
+    console.log(marks[i])
+}
+//Practice question 
+console.log("Array with prices of 5 items,all items have offer 10 % off on them.\nChange the array to store final price after applying offer.")
+let finalPrice=[200,300,100,555]
+for(let i =0;i<finalPrice.length;i++){
+    let percent=finalPrice[i]/10
+    finalPrice[i]-=percent;
+}
+console.log(finalPrice)
+
+///
+
 let company=["Bloomberry","Microsoft","Uber","Google","IBM","Netflix"]
 company.shift()
 console.log(company)
