@@ -265,6 +265,26 @@ for(let i =0;i<finalPrice.length;i++){
     finalPrice[i]-=percent;
 }
 console.log(finalPrice)
+//Array Method
+let food=["veg","non-veg","chicken","juice"]
+food.push("chips")//Add element at last(Making changes to original Array)
+food.pop()//Remove element from last(Making changes to original Array)
+food.unshift("carrot")//Add element at first position(Making changes to original Array)
+food.shift()//Remove element from first position(Making changes to original Array)
+
+console.log(food,food.toString(),"convert Array into String seperated by comma\n(not Making changes to original Array)")
+console.log(food.concat(["a1","a2"],["b1","b2"]),food)//to join Multiple Array(not Making changes to original Array)
+console.log(food.slice(1,3))//cut Array into small array(not Making changes to original Array),end is not included
+console.log(food.slice(),"is used to copy same Array")
+//splice method(start index,number of deleting element from that index,adding element at that index by shifting other element ) 
+//splice(start index,delcount,newelement)
+// food.splice(1,0,"c1","c2")//adding(Making changes to original Array)
+// food.splice(1,1,"c1","c2")
+// food.splice(1,2)//deleting
+// food.splice(1,1,"c2")//replace
+let deletedPart=food.splice(2)//divid array
+food.splice()//no change, no error
+console.log(food,deletedPart)
 
 ///
 
@@ -273,7 +293,7 @@ company.shift()
 console.log(company)
 company.splice(1,1,"Ola")
 company.push("Amazon")
-
+///
 
 
 
