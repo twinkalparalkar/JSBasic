@@ -294,12 +294,78 @@ console.log(company)
 company.splice(1,1,"Ola")
 company.push("Amazon")
 ///
+console.log("I am"*100)//Not a Number
+///////////Function///////////////////////////////////
+//it is used to avoid redundancy(don't repeat yourself)
+function Mymessage(msg){//msg is paramter,local varible,block scope
+ return msg;//return only single value ,no code after return statement
+}
+console.log(Mymessage(),"argument is not passed,msg is not have value")
+console.log(Mymessage("I love JS"),"argument is passed")
+//Arrow function :-Compact way of writing function(Modern JS)
+const sum=(a,b)=>{return a+b;}
+console.log(sum(2,90))
+////function return count of vowel in String
+let str="hello";
+function checkVowel(str){
+    let count=0;
+    for(let char of str){
+        if(char=="a"
+        ||char=="e"
+        ||char=="i"
+        ||char=="o"
+        ||char=="u"){
+            count++;
+        }
+    }
+    return count;
+}
+console.log(checkVowel(str))
+///difference between method and function
+//A function is a block of code that performs a specific task or calculation
+//A Method is a function that is associated with an object or a class or any Data structure
+"err".toUpperCase() //is Method
+let a=[23,56,78]
 
+a.forEach((val,idx,arr)=>{console.log(val*val,idx,arr)})//forEach is used for accessing each value(not return any array)
+let r=a.map((val,idx,arr)=>{console.log(val,idx,arr)})//similar to forEach ,create new array always
+const result=a.filter((val)=> {
+    return val%2==0;
+})//filter array with return condition(create new array)
+console.log(r,result,"map don't use return statement then  [undefined, undefined, undefined] ")
+r=a.map((val)=>{return val**2;})
+console.log(r)
 
-
-
-
-
+/*here we passed function into forEach,map,filter.
+callback function is function passed as argument into other function.
+High order function or method is function take other function as argument and return other function.
+forEach is HOF
+*/
+// reduce :-used to convert any array into single vale like sum,average
+r=a.reduce((result,currentval)=>{
+    return result +currentval
+})
+console.log(r)
+r=a.reduce((result,currentval)=>{
+    return result>currentval? result:currentval;
+})
+console.log("maximum is",r)
+///////
+let arr=[90,80,70,34,100]
+arr.filter((val)=>{
+    return val>=90;
+})
+///////
+let n=prompt("Enter number")
+let fact=[]
+for(let i=1;i<=n;i++){
+fact.push(i)
+}
+const resultValue=fact.reduce((res,curr)=>{
+    return res*curr;
+})
+console.log(fact,`factorial of ${n} is ${resultValue}`)
+///////////////////////////////
 
 
 
