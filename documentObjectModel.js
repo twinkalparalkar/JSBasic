@@ -42,6 +42,36 @@ console.log(document.querySelector("#para").innerText)//return text content of i
 console.log(document.querySelector("#para").innerHTML)//return HTML content 
 console.log(document.querySelector("#para").tagName)//retrun tag name
 console.log(document.querySelector("#para").textContent)//return text content even hidden text
+/////Create p element"Hello "append "Js Tutorial" to this text using JS
 let paragraph=document.querySelector("#para")
-paragraph.innerText=paragraph.innerText +"hello"
+paragraph.innerText=paragraph.innerText +" ,Js Tutorial"//we can change value also
+////Create 3 div with common class name "Box" Access them and add some Uniqueness of them
+let boxs=document.querySelectorAll(".box")
+for(let box of boxs){
+ box.style.width="100px"//node.style:-to change styling
+ box.style.height="100px"
+ box.style.margin="20px"
+box.style.fontSize="20px"
+// box.style.visibility="hidden"
+ box.style.backgroundColor="yellow"
+ 
+}
+///id ,class are attribute 
+console.log(paragraph.getAttribute("id"))///to get attribute value
+paragraph.setAttribute("class","box")//inserting attribute
+//Insert element to DOM:-1)create element 2)add element 
+let newBtn=document.createElement("button")
+newBtn.innerText="Click me"
+let div=document.querySelector("div")
+div.append(newBtn)//add at end of node (inside)
+div.prepend(newBtn)//add at start of node (inside)
+div.before(newBtn)//add at before node (outside)
+div.after(newBtn)//add at after node (outside)
+//add button at starting of body
+document.body.prepend(newBtn)//document.querySelector("body").prepend(newBtn)
+// Delete element in DOM :-remove that button
+document.body.querySelector("button").remove() 
+//adding new class in Paragraph element without removing previous class
+paragraph.setAttribute("class","newClass")//remove previous class
+paragraph.classList.add("newClass")//adding with previous :-classList
 
