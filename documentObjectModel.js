@@ -74,4 +74,45 @@ document.body.querySelector("button").remove()
 //adding new class in Paragraph element without removing previous class
 paragraph.setAttribute("class","newClass")//remove previous class
 paragraph.classList.add("newClass")//adding with previous :-classList
+/*
+Events in JS :-changes in state of object e.g. mover events ,keyup,keydown,form submit,print event 
+Inline event handling(using event inside HTML tag):-<button onclick="console.log('button was clicked')">Click me!</button>
+onclick,ondblclick, onmouseover is attribute 
+but Inline event handling is bad way (it makes HTML code bulky)
+Use Event handling in JS :-node.event=(e)=>{//handle}
+Event object e is special object that store detail about .....e.target,e.type,e.clientX ,e.clientY
+Event Listeners (addEventListener(), removeEventListener()):-when event occur, it executed
+node.addEventListener(event, callback)//we can use multiple event listener
+*/
+let btn=document.querySelector('button')
+console.log(btn)
+btn.onclick=(e)=>{
+    console.log(e.target,e.type,e.clientX ,e.clientY,e)//Event Object
+    console.log("Hello,I am JS event handling")
+}//JS event Handling 
+//JS event Handling is having high priority than Inline Event Handling.last event handling is updated 
+btn.addEventListener('click',(e)=>{
+    console.log("clicked once again")
+})
+// for removing ,we need to pass that callback function as varible
+const handler1=()=>{
+    console.log("Handler1 deleted ")
+}
+btn.addEventListener("click",handler1)
+btn.removeEventListener('click',handler1)
+///Create a toggle button that changes the screen to dark-mode and Light mode when clicked and lightmode when clicked again 
+let btn1=document.querySelector('#mode')
+let mode="light"
+btn1.addEventListener('click',()=>{
+    if(mode=='light'){
+        mode="dark"
+        // document.body.style.backgroundColor="black"
+        document.body.classList.add('dark')
+    }else{
+        mode="light"
+        // document.body.style.backgroundColor="white"
+        document.body.classList.add('light')
+    }
+})
+console.log(mode)
 
