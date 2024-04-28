@@ -4,13 +4,21 @@ let newGameBtn=document.querySelector('#new-btn')
 let msg=document.querySelector("#msg")
 
 let turnO=true//PlayerO
+let count=0;
 let winPattern=[
-    [0,1,2],[3,4,5],[6,7,8],
-    [0,3,6],[1,4,7],[2,5,8],
-    [0,4,8],[2,4,6]]
+    [0,1,2],
+    [3,4,5],
+    [6,7,8],
+    [0,3,6],
+    [1,4,7],
+    [2,5,8],
+    [0,4,8],
+    [2,4,6]
+]
 
 boxes.forEach((element)=>{
     element.addEventListener('click',(e)=>{
+        count++;
         if(turnO){
             e.target.innerText="O"
         }else{
@@ -19,6 +27,10 @@ boxes.forEach((element)=>{
         turnO=!turnO
         element.disabled=true;
         checkWinner()
+        if(count==9){
+            msg.innerText="No Winner"
+            msg.classList.remove('hide')
+        }
     })
 })
 
