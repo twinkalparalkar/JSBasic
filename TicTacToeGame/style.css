@@ -38,3 +38,24 @@ body{
     border-radius: 1rem;
     border: none;
 }
+h1{
+    color: #1446A0;
+}
+#new-btn{
+    padding:1rem;
+    font-size: 1.25rem;
+    background-color: #C75000;
+    color:aliceblue;
+    border-radius: 1rem;
+    border: none;
+}
+
+#msg{
+    color: yellow;
+    font-weight: bold;
+    font-size: 6vmin;
+}
+
+.hide{
+    display:none;
+}
