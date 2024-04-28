@@ -107,10 +107,12 @@ btn1.addEventListener('click',()=>{
     if(mode=='light'){
         mode="dark"
         // document.body.style.backgroundColor="black"
+        document.body.classList.remove('light')
         document.body.classList.add('dark')
     }else{
         mode="light"
         // document.body.style.backgroundColor="white"
+        document.body.classList.remove('dark')
         document.body.classList.add('light')
     }
 })
