@@ -5,9 +5,7 @@ JS Learning Tips and tricks
 # DOM
 # Tic Tac Toe Game in JS
 
-Did you play Tic Tac Toe Game in last page of book?
-Everyone did ,we try to build same Game with JS logic.
-Here, we can check
+Did you play the tic tac toe game on the last page of the book? Everyone did, we tried to create similar games with JS logic. Here, we can check
 
 https://github.com/twinkalparalkar/JSBasic/assets/41465430/1582e779-15d7-4cf8-8824-d7425bcf744e
 
