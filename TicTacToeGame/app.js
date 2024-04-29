@@ -27,15 +27,12 @@ boxes.forEach((element)=>{
         turnO=!turnO
         element.disabled=true;
         checkWinner()
-        if(count==9){
-            msg.innerText="No Winner"
-            msg.classList.remove('hide')
-        }
     })
 })
 
 const resetGame=()=>{
     EnableBoxes()
+    count=0
     turnO=true
     msg.classList.add('hide')
     newGameBtn.classList.add('hide')
@@ -61,11 +58,16 @@ const checkWinner=()=>{
         let pos0=boxes[subarray[0]].innerText;
         let pos1=boxes[subarray[1]].innerText;
         let pos2=boxes[subarray[2]].innerText;
-        if(pos0 && pos1 && pos2 && pos0==pos1 && pos1==pos2){
+        if(pos0!="" && pos1!="" && pos2!="" && pos0==pos1 && pos1==pos2){
             showWinner(pos0)
             disableBoxes();
         }
+        else if(count==9){
+            msg.innerText="No Winner"
+            msg.classList.remove('hide')
+        }
     })
+    
 }
 
 newGameBtn.addEventListener('click',resetGame)
