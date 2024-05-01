@@ -13,24 +13,54 @@ body{
 }
 img{
     border-radius: 50%;
-    width: 22vmin;
-    height: 22vmin;
+    width: 150px;
+    height: 150px;
+    justify-content: center;
 }
 .choices{
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    gap:1.5rem;
-    padding:10vmin;
-    margin-left: 35vmin;
+    gap:3rem; 
+    margin-top: 2rem;
 }
-#msg{
-background-color: black;
-color:white;
-border-radius: 1rem;
-width: fit-content;
-padding:0.8rem;
+.choice{
+    width: 165px;
+    height: 165px;
+    border-radius: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+.choice:hover{
+    /* opacity: 0.5; */
+    background-color: white;
+    cursor: pointer;
+}
+
 
 .score-board{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:3rem;
+    margin-top: 2rem;
+    font-size: 20px;
 }
+#user-score,#comp-score{
+    font-size: 40px;
+}
+
+.msg-container{
+    margin-top: 4rem;
+}
+#msg{
+    background-color: black;
+    color:white;
+    border-radius: 1rem;
+    font-size: 20px;
+    padding:0.8rem;
+    display: inline;
+}
+    
