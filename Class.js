@@ -64,6 +64,38 @@ obj1.stop(49)
 obj1.brandType="RD"//change object property
 console.log(obj1)
 
-//Inheritance
+//Inheritance:- passing all properties and method from parent to child:-duplication with advance feature
+//multiple class acn inherited single class
+class Parent{
+    constructor(name){
+        this.name=name
+        console.log(this.name,"parent")
+    }
+    work(){
+        console.log("Parent working")
+    }
+    eat(){console.log("eat")}
+}
+class Child extends Parent{
+    constructor(name){
+        super(name)//calling Parent constructor when we use custom constructor in child
+        this.email="twinkal@gmail.com"
+    }
+    work(){
+        console.log("working hours",this.name)
+        
+        super.eat()
+    }
+}
+class doctor extends Parent{
+    work(){
+        console.log("doctor")
+    }
+}
+//if parent and child has same method name then use child's method is called Method overriding
+
+let obje1=new Child("Neha")
+console.log(obje1)
+obje1.work()
 
 
