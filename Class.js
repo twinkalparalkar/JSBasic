@@ -121,3 +121,15 @@ class Admin extends User{
 let user2=new Admin("Sita","SitaRam@gmail.com")
 user2.editData("Raha","SitaR@gmail.com")
 console.log(user2.email,user2.name)
+/////////////////
+//try-catch :-Error Handling
+
+let a=10;
+let b=90;
+console.log(a+b)
+try{
+    console.log(a+bc)//due to error it will not stop execution of code
+}catch(err){
+    console.log(err)
+}
+console.log(a*b)
