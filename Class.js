@@ -82,9 +82,9 @@ class Child extends Parent{
         this.email="twinkal@gmail.com"
     }
     work(){
-        console.log("working hours",this.name)
+        console.log("working hours",this.name)//using parent property
         
-        super.eat()
+        super.eat()//Parent method by super
     }
 }
 class doctor extends Parent{
@@ -97,5 +97,27 @@ class doctor extends Parent{
 let obje1=new Child("Neha")
 console.log(obje1)
 obje1.work()
+/////////////////////////
+class User{
+    constructor(name1,email1){
+        this.name=name1
+        this.email=email1 
+    }
+    viewData(){
+        console.log(this.name,this.email)
+    }
+}
+let user1=new User("Ram","Ram@gmail.com")
 
-
+class Admin extends User{
+    constructor(name,email){
+        super(name,email)
+    }
+    editData(name,email){
+        this.name=name
+        this.email=email
+    }
+}
+let user2=new Admin("Sita","SitaRam@gmail.com")
+user2.editData("Raha","SitaR@gmail.com")
+console.log(user2.email,user2.name)
