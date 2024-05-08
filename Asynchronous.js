@@ -26,7 +26,34 @@ function calculate(a,b,sumCallback){
 calculate(4,6,sum)//sum is call back function 
 //also in setTimeout,callback function is used 
 // calculate(4,6,sum())//in argumnet ,don't use parathesis
+//Callback Hell or Pyramid of doom :-Nested callback structure one in another forming Pyramid.Difficult to understand and complex
+function getData(id,getDataNext){
+    setTimeout(()=>{
+        console.log("data"+id)
+        if(getDataNext){
+            getDataNext(id)
+        }
+        
+    },2000)
+}
 
+getData(1)
+// getData(2,getData)
+// getData(2,getData(3))//bad ways to pass argument to callback function ...pass in arrow function
+getData(6,()=>{
+    getData(7)
+})
+//if we want dependency between data1 and data2..like after geeting data1 proceed to data 2
+//real time :first we compare Username if username matched then only we compare password.otherwise drop that whole flow
+
+//we first 2 sec for Data11 then after 2sec for data22 then data33 then data44
+getData(11,()=>{
+    getData(22,()=>{
+        getData(33,()=>{
+            getData(44)
+        })
+    })
+})
 
 
 
