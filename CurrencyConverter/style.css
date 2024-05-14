@@ -3,7 +3,7 @@
     margin:0;
 }
 body{
-    background-color:#AFC1D6 ;
+    background-color:#85BDBF ;
     
     display: flex;
     justify-content: center;
@@ -37,7 +37,7 @@ form input{
     padding:0 0 0 1rem;
 }
 h1{
-    color: #655A7C;
+    color: #57737A;
 }
 form button{
     background-color: darkred;
@@ -74,6 +74,6 @@ form button{
     font-size: 1rem;
     width: auto;
 }
-.msg{
+#msg{
     margin: 2rem 0 0 0;
 }

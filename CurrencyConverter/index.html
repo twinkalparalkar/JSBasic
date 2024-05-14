@@ -18,16 +18,13 @@
             </div>
             
         <div class="dropdown">
-            
             <div class="from">
                 <div>From:</div>
                 <div class="select-container">
-                    <img src="https://flagsapi.com/US/flat/64.png">
+                    <img id="fromFlagImg" src="https://flagsapi.com/US/flat/64.png">
                     <div>
                         <select name="from">
-                            <option>USD</option>
-                            <option>INR</option>
-                            <option>EUR</option>
+                        
                         </select>
                     </div>
                 </div>
@@ -40,19 +37,17 @@
             <div class="to">
                 <div>To:</div>
                 <div class="select-container">
-                    <img src="https://flagsapi.com/IN/flat/64.png">
+                    <img id="toFlagImg" src="https://flagsapi.com/IN/flat/64.png">
                     <div>
                         <select name="to">
-                            <option value="USD">USD</option>
-                            <option value="INR" selected>INR</option>
-                            <option>EUR</option>
+                            
                         </select>
                     </div>
                 </div>
             </div>
         </div>
-            <div class="msg">1USD = 80INR</div>
-            <button>Get Currency converted</button>
+            <div id="msg"></div>
+            <button id="getCurrency">Get Currency converted</button>
 
         </form>
     </div>
