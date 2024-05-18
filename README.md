@@ -27,7 +27,8 @@ I'm excited to share a recent project I've been working on: a Currency Converter
 
 Here, you can check
 
-https://github.com/twinkalparalkar/JSBasic/assets/41465430/08b684b4-20b2-4ea1-a669-60fb2b440855
+https://github.com/twinkalparalkar/JSBasic/assets/41465430/63358151-4b54-419b-a2a7-f2294b054c29
+
 
 
  
