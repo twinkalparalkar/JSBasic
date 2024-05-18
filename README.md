@@ -16,10 +16,18 @@ No Winner case:
 # Rock Paper Scissor Game by JS
 
 we can play this game with Computer.
-Here ,you can check
+Here, you can check
 
 https://github.com/twinkalparalkar/JSBasic/assets/41465430/8acafa66-a8bd-412f-a099-613e0837f1a4
 
+
+# Currency Converter by JS
+
+I'm excited to share a recent project I've been working on: a Currency Converter built using API integration, HTML, CSS, and JavaScript. This converter supports more than 150 currencies and displays their respective flags. 
+
+Here, you can check
+
+https://github.com/twinkalparalkar/JSBasic/assets/41465430/08b684b4-20b2-4ea1-a669-60fb2b440855
 
 
  
