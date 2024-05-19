@@ -3,8 +3,10 @@
     padding: 0;
 }
 body{
-    background-color: #D4AFCD;
-    
+    /* background-color: #D4AFCD; */
+    background-image: url("https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&w=600");   
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 .card{
     justify-content: center;
@@ -13,16 +15,18 @@ body{
     border-radius: 1rem;
     background-color: white; 
     width:29rem;
-    height: 14rem;   
+    height: fit-content;   
     margin:10rem 0rem 0rem 23rem;
     padding:1rem;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.297), -1em 0 .4em rgba(6, 124, 215, 0.338);
 }
 #newQuoteButton{
-    background-color: rgba(228, 20, 103, 0.24);
+    background-color: rgba(5, 69, 117, 0.975);
     border-radius: 0.5rem;
     padding:0.9rem;
-    margin: 3rem 0rem 0rem 5rem;
-    min-height: fit-content;
+    margin: 3rem 0rem 0rem 1rem;
+    width: 95%;
+    color: aliceblue;
 }
 h1{
     margin: 1rem 0rem 0rem 6rem;
@@ -31,4 +35,7 @@ h1{
     margin:2rem 0rem 0rem 3rem;
     font-size: 1.4rem;
     font-weight: bold;
+}
+.author{
+    margin:2rem 0rem 0rem 13rem;
 }
