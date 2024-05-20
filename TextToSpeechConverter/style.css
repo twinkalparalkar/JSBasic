@@ -1,0 +1,39 @@
+*{
+    margin:0rem;
+    padding:0rem;
+}
+body{
+    background-color: rgb(88, 30, 248);
+    color: aliceblue;
+}
+#headingText{
+    color:red;
+    text-decoration: underline red;
+    text-underline-offset: 8px;
+    font-size: 45px;
+}
+h1{
+    font-size: 35px;
+}
+.container{
+    justify-content: center;
+    align-items: center;
+    margin:25vmin 0vmin 10vmin 78vmin;
+}
+/* .cardContainer{
+    align-items: lef;
+} */
+#Text{
+    text-decoration: none;
+    background-color:rgba(255, 255, 255, 0.904);
+    padding: 1rem;
+
+}
+
+.buttonField{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space;
+    gap: 1rem;
+}
+

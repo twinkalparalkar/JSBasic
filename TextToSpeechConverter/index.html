@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text To Speech Converter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Text To Speech <span id="headingText">Converter</span></h1>
+        <div class="cardContainer">
+            <div>
+                <textarea id="Text" name="w3review" rows="6" cols="50">Write required text...
+                </textarea>
+            </div>
+                <br/>
+            <div class="buttonField">
+                <div class="dropdwon">
+                    <select>
+                        <option>Google US English Female</option>
+                        <option>Google UK English Male</option>
+                    </select>
+                </div>
+                <button> <i class="fa-solid fa-play"></i> Listen</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="logic.js"></script>
+</body>
+</html>
