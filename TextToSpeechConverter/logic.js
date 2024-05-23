@@ -21,7 +21,6 @@ ButtonListen.addEventListener("click",()=>{
 
 
 
-
 function dropdownVoices(){
     voices=voiceGenerator.getVoices();
     // console.log(dropdown)
