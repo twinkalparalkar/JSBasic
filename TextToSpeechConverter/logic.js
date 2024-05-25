@@ -10,18 +10,13 @@ window.addEventListener("load",()=>{
     }
 })
 
-
 ButtonListen.addEventListener("click",()=>{
     const voiceObject=new SpeechSynthesisUtterance(inputText.value)
     // console.log(voices,voiceObject,inputText.value)
-    voiceObject.voice=voiceGenerator.getVoices()[dropdown.options[dropdown.selectedIndex].id];
-    console.log(dropdown.options[dropdown.selectedIndex].id)
+    voiceObject.voice=voiceGenerator.getVoices()[dropdown.options[dropdown.selectedIndex].value];
+    // console.log(dropdown.options[dropdown.selectedIndex].value,voiceObject.voice)
     voiceGenerator.speak(voiceObject);
 })
-
- 
-
-
 
 function dropdownVoices(){
     voices=voiceGenerator.getVoices();
