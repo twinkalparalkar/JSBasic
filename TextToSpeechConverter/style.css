@@ -4,7 +4,10 @@
 }
 body{
     background-color: rgb(88, 30, 248);
+    background-image:url("https://images.pexels.com/photos/1261728/pexels-photo-1261728.jpeg?auto=compress&cs=tinysrgb&w=600");
     color: aliceblue;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 #headingText{
     color:red;
@@ -18,7 +21,7 @@ h1{
 .container{
     justify-content: center;
     align-items: center;
-    margin:25vmin 0vmin 10vmin 78vmin;
+    margin:14vmin 0vmin 10vmin 78vmin;
 }
 /* .cardContainer{
     align-items: lef;
@@ -27,7 +30,7 @@ h1{
     text-decoration: none;
     background-color:rgba(255, 255, 255, 0.904);
     padding: 1rem;
-
+    margin:4vmin;
 }
 
 .buttonField{
@@ -36,4 +39,6 @@ h1{
     justify-content: space;
     gap: 1rem;
 }
+
+
 
