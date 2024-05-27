@@ -11,18 +11,22 @@ window.addEventListener("load",()=>{
 })
 
 ButtonListen.addEventListener("click",()=>{
+    document.querySelector("#iconPlay").setAttribute("class","fa-solid fa-pause")
+    
     const voiceObject=new SpeechSynthesisUtterance(inputText.value)
-    // console.log(voices,voiceObject,inputText.value)
     voiceObject.voice=voiceGenerator.getVoices()[dropdown.options[dropdown.selectedIndex].value];
-    // console.log(dropdown.options[dropdown.selectedIndex].value,voiceObject.voice)
     voiceGenerator.speak(voiceObject);
+    
+    voiceObject.addEventListener("end", (event) => {
+        event.preventDefault()
+        document.querySelector("#iconPlay").setAttribute("class","fa-solid fa-play")
+    });
+    
 })
 
 function dropdownVoices(){
     voices=voiceGenerator.getVoices();
-    // console.log(dropdown)
     for(let i=0;i<voices.length;i++){
-        // console.log(voices[i].name,voices[i].voiceURI)
         let option=document.createElement('option')
         option.innerText=voices[i].name +" "+voices[i].lang
         option.id=voices[i].voiceURI

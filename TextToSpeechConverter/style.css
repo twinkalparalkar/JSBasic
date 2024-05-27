@@ -2,43 +2,90 @@
     margin:0rem;
     padding:0rem;
 }
+
 body{
     background-color: rgb(88, 30, 248);
-    background-image:url("https://images.pexels.com/photos/1261728/pexels-photo-1261728.jpeg?auto=compress&cs=tinysrgb&w=600");
-    color: aliceblue;
+    background-image:url("https://images.pexels.com/photos/129731/pexels-photo-129731.jpeg?auto=compress&cs=tinysrgb&w=600");
+    color: rgb(3, 34, 62);
     background-repeat: no-repeat;
     background-size: 100%;
-}
-#headingText{
-    color:red;
-    text-decoration: underline red;
-    text-underline-offset: 8px;
-    font-size: 45px;
-}
-h1{
-    font-size: 35px;
 }
 .container{
     justify-content: center;
     align-items: center;
     margin:14vmin 0vmin 10vmin 78vmin;
 }
-/* .cardContainer{
-    align-items: lef;
-} */
+#headingText{
+    color:rgba(135, 3, 3, 0.753);
+    text-decoration: underline rgba(135, 3, 3, 0.753);
+    text-underline-offset: 8px;
+    font-size: 55px;
+   
+}
+h1{
+    font-size: 35px;
+}
+
 #Text{
     text-decoration: none;
     background-color:rgba(255, 255, 255, 0.904);
     padding: 1rem;
-    margin:4vmin;
+    margin:3vmin 0vmin 1vmin -2vmin;
+    border-radius: 1.5rem;
+    width:90vmin;
+    height:30vmin;
 }
 
 .buttonField{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space;
-    gap: 1rem;
+    justify-content:flex-start;
+    gap: 3rem;
 }
 
+.dropdown select{
+    width:60vmin;
+    height: 5vmin;
+    margin:6px 0px 0px 5px;
+    border-radius: 0.2rem;
+  }
 
+.styled {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: red;
+    background-image: linear-gradient(
+      to top left,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2) 30%,
+      rgba(0, 0, 0, 0)
+    );
+    box-shadow:
+      inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+      inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+  }
+  
+  .styled:hover {
+    background-color: rgba(255, 0, 0, 1);
+  }
+  
+  .styled:active {
+    box-shadow:
+      inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+      inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+  }
+
+  .dropdown select option{
+    background-color:#0ae1cc8d;
+  }
+  
+  .dropdown select::-webkit-scrollbar{
+    width:1px;
+
+  } 
 
