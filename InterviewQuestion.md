@@ -8,7 +8,7 @@ Global EC is pushed into Callstack(Callstack is stack which is used to maintain 
 :-we can use variable or function before initailation of it without getting error.(due to Memory creation of EC)
 
 3)Temporal dead zone
-:-
+:- In EC, after memory creation 
 4)The difference between let, var, const
 :-
 5)Different types of errors and how to produce them.Implementation-based questions based on let, var, const
