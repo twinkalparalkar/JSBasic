@@ -1,6 +1,11 @@
 # HOISTING & LET, VAR, CONST
 1)Execution context
 2)Hoisting
+index()
+function index(){
+console.log("hello")
+}
+
 3)Temporal dead zone
 4)The difference between let, var, const
 -before intialation,let and const is in temporal dead zone
@@ -24,10 +29,10 @@ for const, it is not allowed
 6)Implementation-based questions based on let, var, const
 
 # CLOSER
-	Closer
-	Implementation-based questions based on closer
-	Scopes
-	Lexical Environment
+1)Closer:-nested Function will have lexical scope of its parent in the form of closer.
+2)Implementation-based questions based on closer
+3)lexical Scopes:-the way of finding variable in first the local space then its parent's LE and finally in global space
+4)Lexical Environment=local space+LE of its parent
 	
 # CALLBACK
 	Callback
@@ -56,13 +61,27 @@ for const, it is not allowed
 	Callstack
 	Callback Queue:-?
 	Microtask Queue:-?
+m1=JSON.stringify(m):-is used to convert object into JSON format
 
 # CALL, APPLY, BIND
-	Call
-	Apply
-	Bind
-	Example and there use cases with implementations
-Pollyfill	with implementations:-?
+:-to use object and method together
+1)Call
+2)Apply
+3)Bind
+Example and there use cases with implementations
+
+function addfunction(a,b,c){ 
+	console.log(this.num+a+b+c)
+	}
+const obj={num:90}
+
+addfunction.call(obj,3,4,5)
+addfunction.apply(obj,[3,4,5])
+
+let result=addfunction.bind(obj)
+result(5,3,4)
+
+Pollyfill with implementations:-?
 Create your own Call, Apply, Bind Method
 
 
@@ -126,6 +145,10 @@ for LocalStorage,Never Expire
 memory:-10mb
 storage Location:-browser(store as key:pair)
 
+localStorage.setItem("key",56)
+localStorage.getItem("key")
+localStorage.removeItem("key")
+
 for SessionStorage,Expire after closing tab
 memory:-5mb
 storage Location:-browser
@@ -141,3 +164,26 @@ storage Location:-browser and server
 		400
 		500
 		201
+
+Q1)print 1 at 1sec and print 2 at 2 sec and print 3 at 3sec by var
+:-
+//for(var i=0;i<4;i++){
+//setTimeout(()=>console.log(i),i*1000)
+//}
+
+function y(i){
+	setTimeout(()=>console.log(i),i*1000)
+}
+
+for(var i=0;i<4;i++){
+	y(i)
+}
+
+Q2)const funct=(arr)=>{}
+const nam1=funct(["Lakshmi","Lakshman"]
+nam1()//give "Lakshmi"
+nam1()//give "Lakshman"
+:-
+
+
+
