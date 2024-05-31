@@ -3,7 +3,25 @@
 2)Hoisting
 3)Temporal dead zone
 4)The difference between let, var, const
-5)Different types of errors and how to produce them.Implementation-based questions based on let, var, const
+-before intialation,let and const is in temporal dead zone
+-after intialation,
+const b=90;
+let a=90;
+window.a is not used
+//console.log(a,window.a+"is undefined")
+for var, window.a is used
+-redeclaration
+for var, it is allowed
+for let and const,it is not allowed
+-Changing value
+for var and let,it is allowed
+for const, it is not allowed
+
+5)Different types of errors and how to produce them.
+-Syntax error:-Let is not unexpected
+-type error:-const type not allowed to change value
+-reference error:-Y is not defined
+6)Implementation-based questions based on let, var, const
 
 # CLOSER
 	Closer
@@ -103,8 +121,20 @@ Various Important Methods and Their Implementations
 	Infinite Curring implementation with Usecase
 
 # BROWSER
-	LocalStorage, SessionStorage, Cookies:-?
-	How to use them
+1)LocalStorage, SessionStorage, Cookies:-
+for LocalStorage,Never Expire 
+memory:-10mb
+storage Location:-browser(store as key:pair)
+
+for SessionStorage,Expire after closing tab
+memory:-5mb
+storage Location:-browser
+
+for Cookies,Manually set of Expire
+memory:-4kb
+storage Location:-browser and server
+
+2)How to use them
 	What is the difference
 	Common API status codes
 		200
