@@ -22,6 +22,7 @@ for let and const,it is not allowed
 for var and let,it is allowed
 for const, it is not allowed
 
+
 5)Different types of errors and how to produce them.
 -Syntax error:-Let is not unexpected
 -type error:-const type not allowed to change value
