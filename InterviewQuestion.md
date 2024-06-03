@@ -180,11 +180,85 @@ for(var i=0;i<4;i++){
 	y(i)
 }
 
-Q2)const funct=(arr)=>{}
-const nam1=funct(["Lakshmi","Lakshman"]
+Q2)const print1=(arr)=>{
+}
+const nam1=print1(["Lakshmi","Lakshman"])
 nam1()//give "Lakshmi"
 nam1()//give "Lakshman"
 :-
+const print1=(arr)=>{
+let i=0;
+return ()=>{
+console.log("print",arr[i])
+i++;
+}
+}
+const nam1=print1(["Lakshmi","Lakshman"])
+nam1()//give "Lakshmi"
+nam1()//give "Lakshman"
 
+Q3)
+let arr = {
+	b: 2,
+  a: 1,
+  c_label: 'bye',
+  a_label: 'hello',
+  b_label: 'hi',
+  c: 3,
+};
+
+// To This
+// let brr = {
+//   a: {
+//     value: 1,
+//     label: 'hello',
+//   },
+//   b: {
+//     value: 2,
+//     label: 'hi',
+//   },
+//   c: {
+//     value: 3,
+//     label: 'bye',
+//   },
+// };
+// Convert this
+
+Q4)const questions = [
+  {
+    title: 'Question 1',
+    questions: [
+      {
+        title: 'Question 1.1',
+        questions: [
+          {
+            title: 'Question 1.1.1',
+          },
+          {
+            title: 'Question 1.1.2',
+          },
+        ],
+      },
+      {
+        title: 'Question 1.2',
+        questions: [
+          {
+            title: 'Question 1.2.1',
+          },
+          {
+            title: 'Question 1.2.2',
+          },
+        ],
+      },
+    ],
+  },
+];
+
+for(var i=0;i<questions.)
+
+
+// Print all titles.
+
+Q5. Promise of print after 5 sec by promise
 
 
