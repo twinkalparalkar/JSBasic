@@ -261,4 +261,6 @@ for(var i=0;i<questions.)
 
 Q5. Promise of print after 5 sec by promise
 
+Q6. recurrsion Question
+
 
