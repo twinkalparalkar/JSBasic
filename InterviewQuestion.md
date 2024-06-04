@@ -6,6 +6,7 @@ function index(){
 console.log("hello")
 }
  
+ 
 3)Temporal dead zone
 4)The difference between let, var, const
 -before intialation,let and const is in temporal dead zone
