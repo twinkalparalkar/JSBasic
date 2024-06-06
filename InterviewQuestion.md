@@ -1,6 +1,6 @@
 # HOISTING & LET, VAR, CONST
 1)Execution context
-
+ 
 2)Hoisting 
 index()
 function index(){
